@@ -16,7 +16,7 @@ export const workExperiences: Experience[] = [
     technologies: ["React", "TailwindCSS", "TypeScript"],
   },
   {
-    date: "Jan 2025 - Now",
+    date: "Jan 2025 - Oct 2025",
     title: "Lead Frontend Developer at LawdAm",
     company: "LawdAm",
     location: "Uyo, Nigeria",
