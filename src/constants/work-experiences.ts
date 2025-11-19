@@ -3,7 +3,7 @@ import type { Experience } from "@/types";
 export const workExperiences: Experience[] = [
   {
     date: "Jul 2025 - Now",
-    title: "Frontend Developer at Applift",
+    title: "Full-stack Developer at Applift",
     company: "Applift Technologies Limited",
     location: "Uyo, Nigeria",
     website: "https://www.applift.xyz/",
@@ -31,7 +31,7 @@ export const workExperiences: Experience[] = [
   },
   {
     date: "Apr 2024 - Now",
-    title: "Lead Frontend Developer at Acadeva",
+    title: "Website Developer at Acadeva",
     company: "Acadeva",
     location: "Uyo, Nigeria",
     website: "https://acadeva.xyz",
