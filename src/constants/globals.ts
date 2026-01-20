@@ -6,3 +6,4 @@ export const EMAIL_URL = `mailto:${EMAIL}`;
 export const PHONE = "+234 807 6488 738";
 export const PHONE_URL = `tel:${PHONE.replace(/[()\s-]/g, "")}`;
 export const TELEGRAM_URL = "https://t.me/mikelneonedwin";
+export const WHATSAPP_URL = "https://wa.me/2348076488738";

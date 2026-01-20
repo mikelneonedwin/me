@@ -2,6 +2,55 @@ import type { Experience } from "@/types";
 
 export const personalProjects: Experience[] = [
   {
+    date: "December 2025",
+    title: "Roidy",
+    github: "https://github.com/mikelneonedwin/roidy",
+    description: [
+      "Production-ready terminal UI for managing Android files over ADB",
+      "Features multi-select, downloads, and deletion tracking",
+      "Rebranded from TypeScript to Python — still a WIP",
+    ],
+    technologies: ["Python", "CustomTkinter", "ADB"],
+  },
+  {
+    date: "November 2025",
+    title: "Next.js Multi-Tenant",
+    github: "https://github.com/mikelneonedwin/nextjs-multitenant",
+    description: [
+      "Modern multi-tenant e-commerce platform serving multiple storefronts from a single codebase",
+      "Automatic tenant detection via domain/sub-path with unique storefront, categories, and inventory per tenant",
+      "Ideal for SaaS e-commerce, marketplace SaaS, or branded vendor deployments",
+    ],
+    technologies: ["Next.js", "Prisma", "Shadcn/ui", "React", "TypeScript"],
+  },
+  {
+    date: "November 2025",
+    title: "Tiptap Blog Template",
+    website: "https://tiptap-blog-demo.vercel.app",
+    description: [
+      "Standalone, reusable blog application extracted from a previous project",
+      "Built as a personal, portable blogging system for easy integration and independent deployment",
+    ],
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "Prisma",
+      "Tiptap",
+      "React",
+      "TypeScript",
+    ],
+  },
+  {
+    date: "October 2025",
+    title: "Scenage",
+    github: "https://github.com/mikelneonedwin/scenage",
+    description: [
+      "Type-safe Node.js CLI for automatically arranging movie downloads",
+      "Moves, renames, and checks episodes and subtitles with ease",
+    ],
+    technologies: ["TypeScript", "cmd-ts", "Node.js"],
+  },
+  {
     date: "August 2025",
     title: "Deathmatch Agents",
     github: "https://github.com/mikelneonedwin/deathmatch-agents",

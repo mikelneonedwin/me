@@ -134,65 +134,81 @@
 }
 
 .dark {
-  --background: oklch(0.1763 0.014 258.3572);
-  --foreground: oklch(0.8569 0.0141 247.9925);
-  --card: oklch(0.2202 0.0157 256.8163);
-  --card-foreground: oklch(0.9425 0.0111 243.6566);
-  --popover: oklch(0.1763 0.014 258.3572);
-  --popover-foreground: oklch(0.9425 0.0111 243.6566);
-  --primary: oklch(0.567 0.1546 248.5156);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.2666 0.015 256.7978);
-  --secondary-foreground: oklch(0.9425 0.0111 243.6566);
-  --muted: oklch(0.2202 0.0157 256.8163);
-  --muted-foreground: oklch(0.6625 0.0181 250.9217);
-  --accent: oklch(0.2666 0.015 256.7978);
-  --accent-foreground: oklch(0.9816 0.0017 247.839);
-  --destructive: oklch(0.5864 0.2011 26.7933);
-  --border: oklch(0.2666 0.015 256.7978);
-  --input: oklch(0.2666 0.015 256.7978);
-  --ring: oklch(0.567 0.1546 248.5156);
-  --chart-1: oklch(0.7153 0.1518 253.3061);
-  --chart-2: oklch(0.6951 0.1809 145.6213);
-  --chart-3: oklch(0.7386 0.1709 349.6833);
-  --chart-4: oklch(0.7345 0.1626 25.7837);
-  --chart-5: oklch(0.6606 0.1935 298.1379);
-  --sidebar: oklch(0.1763 0.014 258.3572);
-  --sidebar-foreground: oklch(0.6625 0.0181 250.9217);
-  --sidebar-primary: oklch(0.9425 0.0111 243.6566);
-  --sidebar-primary-foreground: oklch(0.1763 0.014 258.3572);
-  --sidebar-accent: oklch(0.2202 0.0157 256.8163);
-  --sidebar-accent-foreground: oklch(0.9816 0.0017 247.839);
-  --sidebar-border: oklch(0.2666 0.015 256.7978);
-  --sidebar-ring: oklch(0.567 0.1546 248.5156);
-  --destructive-foreground: oklch(0.9816 0.0017 247.839);
-  --radius: 0.5rem;
-  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  /* Premium Midnight Blue background */
+  --background: oklch(0.13 0.025 245);
+  --foreground: oklch(0.92 0.01 245);
+  
+  /* Slightly lighter cards for depth */
+  --card: oklch(0.16 0.02 245);
+  --card-foreground: oklch(0.95 0.005 245);
+  --popover: oklch(0.14 0.022 245);
+  --popover-foreground: oklch(0.95 0.005 245);
+  
+  /* Amber/Yellow accent as primary */
+  --primary: oklch(0.75 0.18 75);
+  --primary-foreground: oklch(0.15 0.03 75);
+  
+  /* Secondary remains muted */
+  --secondary: oklch(0.22 0.02 245);
+  --secondary-foreground: oklch(0.92 0.01 245);
+  --muted: oklch(0.18 0.015 245);
+  --muted-foreground: oklch(0.65 0.015 245);
+  
+  /* Accent uses amber glow */
+  --accent: oklch(0.75 0.18 75);
+  --accent-foreground: oklch(0.15 0.03 75);
+  
+  --destructive: oklch(0.58 0.2 27);
+  --destructive-foreground: oklch(0.98 0.002 245);
+  
+  --border: oklch(0.25 0.02 245);
+  --input: oklch(0.22 0.02 245);
+  --ring: oklch(0.75 0.18 75);
+  
+  /* Chart colors with amber influence */
+  --chart-1: oklch(0.75 0.18 75);
+  --chart-2: oklch(0.70 0.18 145);
+  --chart-3: oklch(0.74 0.17 350);
+  --chart-4: oklch(0.73 0.16 26);
+  --chart-5: oklch(0.66 0.19 298);
+  
+  /* Sidebar with same midnight theme */
+  --sidebar: oklch(0.11 0.025 245);
+  --sidebar-foreground: oklch(0.65 0.015 245);
+  --sidebar-primary: oklch(0.75 0.18 75);
+  --sidebar-primary-foreground: oklch(0.15 0.03 75);
+  --sidebar-accent: oklch(0.18 0.02 245);
+  --sidebar-accent-foreground: oklch(0.98 0.002 245);
+  --sidebar-border: oklch(0.22 0.02 245);
+  --sidebar-ring: oklch(0.75 0.18 75);
+  
+  --radius: 0.625rem;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: Georgia, "Times New Roman", Times, serif;
-  --font-mono: Menlo, Monaco, "Courier New", monospace;
+  --font-mono: "JetBrains Mono", Menlo, Monaco, "Courier New", monospace;
   --shadow-color: #000000;
-  --shadow-opacity: 0.1;
-  --shadow-blur: 8px;
+  --shadow-opacity: 0.25;
+  --shadow-blur: 12px;
   --shadow-spread: 0px;
   --shadow-offset-x: 0px;
-  --shadow-offset-y: 4px;
+  --shadow-offset-y: 6px;
   --letter-spacing: 0rem;
   --spacing: 0.25rem;
-  --shadow-2xs: 0px 4px 8px 0px hsl(0 0% 0% / 0.05);
-  --shadow-xs: 0px 4px 8px 0px hsl(0 0% 0% / 0.05);
-  --shadow-sm: 0px 4px 8px 0px hsl(0 0% 0% / 0.1),
-    0px 1px 2px -1px hsl(0 0% 0% / 0.1);
-  --shadow: 0px 4px 8px 0px hsl(0 0% 0% / 0.1),
-    0px 1px 2px -1px hsl(0 0% 0% / 0.1);
-  --shadow-md: 0px 4px 8px 0px hsl(0 0% 0% / 0.1),
-    0px 2px 4px -1px hsl(0 0% 0% / 0.1);
-  --shadow-lg: 0px 4px 8px 0px hsl(0 0% 0% / 0.1),
-    0px 4px 6px -1px hsl(0 0% 0% / 0.1);
-  --shadow-xl: 0px 4px 8px 0px hsl(0 0% 0% / 0.1),
-    0px 8px 10px -1px hsl(0 0% 0% / 0.1);
-  --shadow-2xl: 0px 4px 8px 0px hsl(0 0% 0% / 0.25);
+  --shadow-2xs: 0px 2px 4px 0px hsl(0 0% 0% / 0.1);
+  --shadow-xs: 0px 4px 8px 0px hsl(0 0% 0% / 0.15);
+  --shadow-sm: 0px 4px 8px 0px hsl(0 0% 0% / 0.2),
+    0px 1px 2px -1px hsl(0 0% 0% / 0.15);
+  --shadow: 0px 4px 12px 0px hsl(0 0% 0% / 0.25),
+    0px 2px 4px -1px hsl(0 0% 0% / 0.15);
+  --shadow-md: 0px 6px 16px 0px hsl(0 0% 0% / 0.25),
+    0px 3px 6px -2px hsl(0 0% 0% / 0.15);
+  --shadow-lg: 0px 8px 24px 0px hsl(0 0% 0% / 0.3),
+    0px 4px 8px -2px hsl(0 0% 0% / 0.15);
+  --shadow-xl: 0px 12px 32px 0px hsl(0 0% 0% / 0.35),
+    0px 6px 12px -3px hsl(0 0% 0% / 0.15);
+  --shadow-2xl: 0px 16px 48px 0px hsl(0 0% 0% / 0.4);
 }
 
 @layer base {
@@ -209,6 +225,86 @@
   h2 + div {
     @apply text-secondary-foreground leading-relaxed;
   }
+}
+
+/* Glassmorphism utility */
+.glass-card {
+  background: oklch(0.16 0.02 245 / 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid oklch(0.3 0.02 245 / 0.3);
+  box-shadow: 0 8px 32px oklch(0 0 0 / 0.2);
+}
+
+/* Squiggly line animation */
+@keyframes squiggle {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+
+.squiggly-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.squiggly-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23f59e0b' stroke-width='1.5' d='M0 3c5 0 5-2 10-2s5 2 10 2 5-2 10-2'/%3E%3C/svg%3E");
+  background-size: 20px 6px;
+  background-repeat: repeat-x;
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(135deg, oklch(0.75 0.18 75) 0%, oklch(0.85 0.15 60) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glow effect for accent elements */
+.glow-accent {
+  box-shadow: 0 0 20px oklch(0.75 0.18 75 / 0.3),
+              0 0 40px oklch(0.75 0.18 75 / 0.1);
+}
+
+/* Timeline connector styles */
+.timeline-connector {
+  position: relative;
+}
+
+.timeline-connector::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, oklch(0.75 0.18 75) 0%, oklch(0.75 0.18 75 / 0.2) 100%);
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: oklch(0.75 0.18 75);
+  border: 2px solid oklch(0.13 0.025 245);
+  box-shadow: 0 0 10px oklch(0.75 0.18 75 / 0.5);
 }
 
 * {
