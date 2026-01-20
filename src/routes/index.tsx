@@ -7,7 +7,7 @@ import Stats from "@/components/stats";
 import Experiences from "@/components/work-display";
 import { personalProjects } from "@/constants/personal-projects";
 import { workExperiences } from "@/constants/work-experiences";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 
 export const Route = createFileRoute("/")({
@@ -54,12 +54,12 @@ function RouteComponent() {
           viewport={{ once: true }}
           className="mt-8 text-center"
         >
-          <a
-            href="/projects"
+          <Link
+to="/projects"
             className="text-primary hover:underline underline-offset-4"
           >
             View all {personalProjects.length} projects →
-          </a>
+          </Link>
         </motion.div>
       </section>
 
