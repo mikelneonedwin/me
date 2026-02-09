@@ -3,14 +3,14 @@ import type { Experience } from "@/types";
 export const personalProjects: Experience[] = [
   {
     date: "December 2025",
-    title: "Roidy",
-    github: "https://github.com/mikelneonedwin/roidy",
+    title: "roidfs",
+    github: "https://github.com/mikelneonedwin/roidfs",
     description: [
-      "Production-ready terminal UI for managing Android files over ADB",
-      "Features multi-select, downloads, and deletion tracking",
-      "Rebranded from TypeScript to Python — still a WIP",
+      "Terminal-based file system analyzer with visual progress bars",
+      "Supports both Linux and Android (ADB) modes for disk usage analysis",
+      "Built with Ink, TypeScript, and Zustand for an interactive TUI experience",
     ],
-    technologies: ["Python", "CustomTkinter", "ADB"],
+    technologies: ["Ink", "TypeScript", "Zustand", "ADB", "Node.js"],
   },
   {
     date: "November 2025",
