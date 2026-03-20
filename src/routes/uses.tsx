@@ -16,8 +16,8 @@ function UsesPage() {
           <span className="squiggly-underline">The Stuff I Use</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
-          A curated list of hardware, software, and tools that power my
-          development workflow.
+          A curated list of the editors, frameworks, and tools I use most in
+          my development workflow.
         </p>
       </div>
 

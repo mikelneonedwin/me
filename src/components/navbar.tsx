@@ -1,6 +1,7 @@
 "use client";
 
 import { GITHUB_URL, X_URL } from "@/constants/globals";
+import { RESUME_FILE_NAME, RESUME_PDF_URL } from "@/constants/resume";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
 import { Link, useLocation } from "@tanstack/react-router";
@@ -73,7 +74,11 @@ export function Navbar() {
                 size="sm"
                 className="rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground border border-primary/20"
               >
-                <a href="#" title="Download Resume">
+                <a
+                  href={RESUME_PDF_URL}
+                  download={RESUME_FILE_NAME}
+                  title="Download Resume"
+                >
                   <FileText className="w-4 h-4 mr-1.5" />
                   Resume
                 </a>
@@ -130,6 +135,11 @@ export function Navbar() {
               WE<span className="text-primary">.</span>
             </Link>
             <div className="flex items-center gap-1">
+              <Button asChild variant="ghost" size="icon" className="w-9 h-9">
+                <a href={RESUME_PDF_URL} download={RESUME_FILE_NAME}>
+                  <FileText className="w-4 h-4" />
+                </a>
+              </Button>
               <Button asChild variant="ghost" size="icon" className="w-9 h-9">
                 <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
                   <Icon icon="mdi:github" className="w-5 h-5" />
