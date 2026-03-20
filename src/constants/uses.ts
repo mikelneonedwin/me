@@ -12,85 +12,6 @@ export type UseCategory = {
 
 export const uses: UseCategory[] = [
   {
-    title: "Hardware & Setup",
-    items: [
-      {
-        name: "HP Elitebook",
-        description: "Primary development machine",
-        icon: "mdi:laptop",
-      },
-      {
-        name: "4G MTN Router",
-        description: "Internet connectivity",
-        icon: "mdi:router-wireless",
-      },
-      {
-        name: "Ubuntu",
-        description: "Operating system of choice",
-        icon: "logos:ubuntu",
-      },
-    ],
-  },
-  {
-    title: "Editor & Terminal",
-    items: [
-      {
-        name: "Zed",
-        description: "Primary code editor",
-        icon: "simple-icons:zedindustries",
-        url: "https://zed.dev",
-      },
-      {
-        name: "VS Code",
-        description: "Secondary editor",
-        icon: "vscode-icons:file-type-vscode",
-        url: "https://code.visualstudio.com",
-      },
-      {
-        name: "Antigravity",
-        description: "AI coding assistant",
-        icon: "simple-icons:google",
-      },
-      {
-        name: "Gemini CLI",
-        description: "Terminal AI assistant",
-        icon: "simple-icons:google",
-      },
-      {
-        name: "Brave",
-        description: "Primary browser",
-        icon: "simple-icons:brave",
-        url: "https://brave.com",
-      },
-      {
-        name: "JetBrains Mono",
-        description: "Coding font",
-        icon: "simple-icons:jetbrains",
-        url: "https://www.jetbrains.com/lp/mono/",
-      },
-    ],
-  },
-  {
-    title: "AI Tools",
-    items: [
-      {
-        name: "Gemini 3",
-        description: "Primary AI assistant",
-        icon: "simple-icons:google",
-      },
-      {
-        name: "ChatGPT",
-        description: "OpenAI's conversational AI",
-        icon: "simple-icons:openai",
-      },
-      {
-        name: "Claude Opus",
-        description: "Anthropic's advanced model",
-        icon: "simple-icons:anthropic",
-      },
-    ],
-  },
-  {
     title: "Frontend",
     items: [
       {
@@ -194,6 +115,11 @@ export const uses: UseCategory[] = [
         name: "Fastify",
         description: "High-performance framework",
         icon: "simple-icons:fastify",
+      },
+      {
+        name: "NestJS",
+        description: "Structured Node.js framework",
+        icon: "simple-icons:nestjs",
       },
       {
         name: "Nitro",
@@ -324,12 +250,6 @@ export const uses: UseCategory[] = [
         description: "Code formatter",
         icon: "logos:prettier",
       },
-      { name: "Husky", description: "Git hooks made easy", icon: "mdi:dog" },
-      {
-        name: "Lint-staged",
-        description: "Run linters on staged files",
-        icon: "mdi:check-circle",
-      },
       {
         name: "Lefthook",
         description: "Fast Git hooks manager",
@@ -351,16 +271,6 @@ export const uses: UseCategory[] = [
         description: "Documentation & notes",
         icon: "simple-icons:notion",
         url: "https://notion.so",
-      },
-      {
-        name: "WhatsApp",
-        description: "Primary communication",
-        icon: "logos:whatsapp-icon",
-      },
-      {
-        name: "YouTube Music",
-        description: "Music while coding",
-        icon: "logos:youtube-icon",
       },
       {
         name: "YouTube",

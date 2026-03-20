@@ -30,7 +30,7 @@ export const workExperiences: Experience[] = [
     technologies: ["React", "TypeScript", "Firebase", "TailwindCSS", "Shadcn"],
   },
   {
-    date: "Apr 2024 - Now",
+    date: "Apr 2024 - Feb 2026",
     title: "Website Developer at Acadeva",
     company: "Acadeva",
     location: "Uyo, Nigeria",
