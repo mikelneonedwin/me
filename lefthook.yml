@@ -1,0 +1,22 @@
+pre-push:
+  jobs:
+    - name: build
+      run: bun run build
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: "lint"
+      run: bunx eslint --fix --no-warn-ignored {staged_files}
+      glob: "*.{js,ts,jsx,tsx}"
+      stage_fixed: true
+
+    - name: "format"
+      run: bunx prettier --write --log-level silent {staged_files}
+      glob: "*.{js,ts,jsx,tsx,json,yml,md}"
+      stage_fixed: true
+
+    - name: "typecheck"
+      run: bunx tsc --noEmit
+      glob: "*.{js,ts,jsx,tsx}"
+      stage_fixed: true
