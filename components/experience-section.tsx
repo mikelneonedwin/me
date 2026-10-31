@@ -256,7 +256,7 @@ export function ExperienceSection() {
       </div>
 
       {/* Mobile Layout: Responsive Accordion using shadcn with dividers, no cards, no chevrons */}
-      <div className="md:hidden w-full">
+      <div className="md:hidden w-full [overflow-anchor:none]">
         <Accordion
           defaultValue={[WORK_EXPERIENCE[0].id]}
           className="w-full flex flex-col"
